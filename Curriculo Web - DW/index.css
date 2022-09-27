@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.center {
+  margin: auto;
+  width: max-content;
+}
+
+#container-esquerda {
+  width: 300px;
+  padding: 30px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#container-direita {
+  width: 500px;
+  padding: 30px;
+  padding-top: 40px;
+  margin-left: 80px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.bg-blue {
+  background-color: #1f6c9b;
+  width: 300px;
+  padding: 16px;
+  margin: auto;
+}
+
+.imagem-perfil {
+  width: 100%;
+}
+
+#nome {
+  color: white;
+  font-family: Arial, Verdana, sans-serif;
+  margin-bottom: 10px;
+}
+
+#identificacao {
+  color: white;
+  font-family: Arial, Verdana, sans-serif;
+}
+
+.lista {
+  margin-left: 16px;
+  list-style: circle;
+}
+
+.subtitulo {
+  margin: 0px 0px 10px 0px
+}
+
+#apresentacao {
+  color: white;
+  font-family: Arial, Verdana, sans-serif;
+}
+
+.header {
+  font-family: Arial, Verdana, sans-serif;
+}
+
+.link {
+  font-size: 12px;
+  padding: 4px;
+  border: 1px solid black;
+}
+
+.link:hover {
+  background-color: #1f6c91;
+  color: white;
+}
+
+.bold {
+  font-weight: 700
+}
+
+.linha {
+  width: 90%;
+  margin: 10px 0px;
+  margin: 20px;
+}
+
+#formacao-academica {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-family: Arial, Verdana, sans-serif;
+
+}
+
+#formacao-academica h4 {
+  color: #1f6c91;
+  font-family: Arial, Verdana, sans-serif;
+}
+
+.lista-ordenada {
+  margin-left: 18px; 
+}
+
+#experiencia-profissional h4 {
+  color: #1f6c91;
+  font-family: Arial, Verdana, sans-serif;
+
+}
+
+.lista-descritiva .dd {
+  font-family: Arial, Verdana, sans-serif;
+  margin-left: 25px;
+  font-size: 14px;
+}
+
+.lista-descritiva .dt {
+  font-family: Arial, Verdana, sans-serif;
+}
+
+.titulo-atv{
+  margin-bottom: 30px;
+}
