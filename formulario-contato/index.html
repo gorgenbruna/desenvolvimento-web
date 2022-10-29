@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Contato</title>
+
+  <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+  <form method="post" action="recebedados.php">
+    <fieldset id="dados-pessoais">
+      <legend>Dados pessoais</legend>
+      <div>
+        <label class="label" for="nome-completo">Nome Completo:</label>
+        <input type="text" id="nome-completo" name="nome-completo" placeholder="Obrigatório" required autofocus>
+      </div>
+      <div>
+        <label class="label">Gênero:</label>
+        <div>
+          <input type="radio" id="feminino" name="genero" value="Feminino">
+          <label for="feminino">Feminino</label>
+        </div>
+        <div>
+          <input type="radio" id="masculino" name="genero" value="Masculino">
+          <label for="masculino">Masculino</label>
+        </div>
+        <div>
+          <input type="radio" id="outro" name="genero" value="Outro">
+          <label for="outro">Outro</label>
+        </div>
+        <div>
+          <input type="radio" id="nao-responder" name="genero" value="Prefiro não responder">
+          <label for="nao-responder">Prefiro não responder</label>
+        </div>
+      </div>
+      <div>
+        <label class="label" for="data-nascimento">Data nascimento:</label>
+        <input type="date" id="data-nascimento" name="data-nascimento">
+      </div>
+      <div>
+        <label class="label" for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Obrigatório" required>
+      </div>
+      <div>
+        <label class="label" for="url">URL site pessoal:</label>
+        <input type="url" id="url" name="url">
+      </div>
+      <div>
+        <label class="label" for="endereco">Endereço (Rua, número e complemento):</label>
+        <input type="text" id="endereco" name="endereco" placeholder="Obrigatório" required>
+      </div>
+      <div>
+        <label class="label">Cidade:</label>
+        <div>
+          <input type="radio" id="alvorada" name="cidade" value="Alvorada">
+          <label for="alvorada">Alvorada</label>
+        </div>
+        <div>
+          <input type="radio" id="canoas" name="cidade" value="Canoas">
+          <label for="canoas">Canoas</label>
+        </div>
+        <div>
+          <input type="radio" id="esteio" name="cidade" value="Esteio">
+          <label for="esteio">Esteio</label>
+        </div>
+        <div>
+          <input type="radio" id="gravatai" name="cidade" value="Gravataí">
+          <label for="gravatai">Gravataí</label>
+        </div>
+        <div>
+          <input type="radio" id="novo-hamburgo" name="cidade" value="Novo Hamburgo">
+          <label for="novo-hamburgo">Novo Hamburgo</label>
+        </div>
+        <div>
+          <input type="radio" id="passo-fundo" name="cidade" value="Passo Fundo">
+          <label for="passo-fundo">Passo Fundo</label>
+        </div>
+        <div>
+          <input type="radio" id="pelotas" name="cidade" value="Pelotas">
+          <label for="pelotas">Pelotas</label>
+        </div>
+        <div>
+          <input type="radio" id="porto-alegre" name="cidade" value="Porto Alegre">
+          <label for="porto-alegre">Porto Alegre</label>
+        </div>
+        <div>
+          <input type="radio" id="sao-leopoldo" name="cidade" value="São Leopoldo">
+          <label for="sao-leopoldo">São Leopoldo</label>
+        </div>
+      </div>
+      <div>
+        <label class="label" for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="00 000000000" pattern="[0-9]{2} [0-9]{9}">
+      </div>
+    </fieldset>
+
+    <fieldset id="dados-profissionais"> 
+      <legend>Dados profissionais</legend>
+      <div>
+        <label class="label">Áreas de atuação:</label>
+        <div>
+          <input type="checkbox" id="design" name="area" value="Design">
+          <label for="design">Design</label>
+        </div>
+        <div>
+          <input type="checkbox" id="front-end" name="area" value="Desenvolvimento Front-end">
+          <label for="front-end">Desenvolvimento Front-end</label>
+        </div>
+        <div>
+          <input type="checkbox" id="back-end" name="area" value="Desenvolvimento Back-end">
+          <label for="back-end">Desenvolvimento Back-end</label>
+        </div>
+        <div>
+          <input type="checkbox" id="engenharia-software" name="area" value="Engenharia de Software">
+          <label for="engenharia-software">Engenharia de Software</label>
+        </div>
+        <div>
+          <input type="checkbox" id="banco-dados" name="area" value="Banco de dados">
+          <label for="banco-dados">Banco de dados</label>
+        </div>
+        <div>
+          <input type="checkbox" id="analise-testes" name="area" value="Análise de Testes">
+          <label for="analise-testes">Análise de Testes</label>
+        </div>
+        <div>
+          <input type="checkbox" id="analise-negocios" name="area" value="Análise de Negócios">
+          <label for="analise-negocios">Análise de Negócios</label>
+        </div>
+        <div>
+          <input type="checkbox" id="manutencao" name="cidade" value="Pelotas">
+          <label for="manutencao">Manutenção</label>
+        </div>
+      </div>
+      <div>
+        <label for="formacao">Formação:</label>
+        <input list="formacoes" name="formacao" id="formacao">
+        <datalist id="formacoes">
+          <option value="Ensino Fundamental">
+          <option value="Ensino Médio">
+          <option value="Ensino Superior">
+          <option value="Especialização">
+          <option value="Mestrado">
+          <option value="Doutorado">
+        </datalist>
+      </div>
+      <div>
+        <label class="label" for="historico-profissional">Histórico profissional:</label>
+        <textarea id="historico-profissional" name="historico-profissional"></textarea>
+      </div>
+      <div>
+        <label class="label" for="curriculo">Currículo vitae:</label>
+        <input type="file" id="curriculo" name="curriculo">
+      </div>
+      <div>
+        <label class="label" for="disponibilidade">Disponibilidade de horas semanais:</label>
+        <input type="range" id="disponibilidade" name="disponibilidade" min="10" max="40" step="10" list="horas">
+        <datalist id="horas">
+          <option value="10" label="10"></option>
+          <option value="20" label="20"></option>
+          <option value="30" label="30"></option>
+          <option value="40" label="40"></option>
+        </datalist>
+      </div>
+    </fieldset>
+
+    <fieldset id="agendamento-entrevista">
+      <legend>Agendamento de entrevista</legend>
+      <div>
+        <label class="label" for="data-agendamento">Data:</label>
+        <input type="date" id="data-agendamento" name="data-agendamento" placeholder="Obrigatório" required>
+      </div>
+      <div>
+        <label class="label" for="hora-agendamento">Hora:</label>
+        <input type="time" id="hora-agendamento" name="hora-agendamento" placeholder="Obrigatório" required>
+      </div>
+    </fieldset>
+  </form>
+</body>
+</html>
